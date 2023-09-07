@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfect Html form</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Contact Form</h1>
+      <form action="process_form.php" method="post">
+        <label for="Full_Name">Full Name</label>
+        <input
+          type="text"
+          name="FullName"
+          id="FullName"
+          placeholder="Enter Your Full Name"
+        />
+        <label for="Phone_number">Phone Number</label>
+        <input
+          type="tel"
+          name="Phone Number"
+          id="Phone Number"
+          placeholder="Enter Your Mobile Number"
+        />
+        <label for="Email">Email</label>
+        <input
+          type="email"
+          name="Email"
+          id="Email"
+          placeholder="Enter Your Email"
+        />
+        <label for="Subject">Subject</label>
+        <input
+          type="text"
+          name="Subject"
+          id="Subject"
+          placeholder="Enter Your Subject"
+        />
+        <label for="Message">Message</label>
+        <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        <button type="submit " class="btn">Submit</button>
+      </form>
+    </div>
+  </body>
+</html>
