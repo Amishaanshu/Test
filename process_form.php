@@ -1,8 +1,8 @@
 <?php
-$servername="localhost";
-$username="root@localhost";
-$password="";
-$database="contact_form_test";
+   $servername = 'localhost'; // Replace with your database host
+   $database = 'your_db_name'; // Replace with your database name
+   $username = 'your_db_username'; // Replace with your database username
+   $password = 'your_db_password'; // Replace with your database password
 try{
     $conn=new PDO("mysql:servername=$servername;database=$database;$username,$password");
     $conn->setAttribute(PDO::ATTR_ERRMODE,PDO::ERRMODE_EXCEPTION);
@@ -33,7 +33,7 @@ try{
         $stmt->bindParam(':ip_address',$ip_address);
         $stmt->execute();
 
-        $to='anshuamisha26@gmail.com';
+        $to='site@gmail.com';
         $subject="New contact form submission";
         $message="Name: $full_name\n";
         $message="Phone Number: $phone_number\n";
